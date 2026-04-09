@@ -4,22 +4,22 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const HeroSection = ({ currentDate, themeColor, onMonthChange }) => {
   return (
     <div className="relative h-[400px] md:h-[600px] w-full bg-white overflow-hidden rounded-t-xl">
-      {/* WRAPPER */}
+
       <div className="absolute top-0 left-0 w-full h-[400px] md:h-[600px]">
-        {/* IMAGE */}
+
         <img
           src="https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
           alt="Mountain Climber"
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
         />
 
-        {/* Decorative SVGs */}
+
         <svg
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
           className="absolute inset-0 w-full h-full z-10 pointer-events-none"
         >
-          {/* Main White Valley Section */}
+
           <path
             d="M 0,100 
                L 0,65 
@@ -31,14 +31,14 @@ const HeroSection = ({ currentDate, themeColor, onMonthChange }) => {
             fill="#ffffff"
           />
 
-          {/* Left Decorative Blue Triangle */}
+
           <polygon
             points="0,65 18,74 0,85"
             fill={themeColor}
             className="opacity-90"
           />
 
-          {/* Right Main Blue Shape (The "Wing") */}
+
           <path
             d="M 38,94 
                L 100,35 
@@ -49,7 +49,7 @@ const HeroSection = ({ currentDate, themeColor, onMonthChange }) => {
           />
         </svg>
 
-        {/* Month/Year Text - Positioned within the blue wing */}
+
         <div className="absolute bottom-[20%] right-[8%] z-20 flex flex-col items-end text-white text-right">
           <div className="flex items-center gap-3 mb-1">
             <button 

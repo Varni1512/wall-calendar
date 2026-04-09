@@ -1,49 +1,54 @@
-# Interactive Wall Calendar (React + Tailwind)
+# Interactive Wall Calendar
 
-A polished, responsive calendar component inspired by a physical wall calendar aesthetic.
+A premium, aesthetically pleasing interactive wall calendar designed to provide a nostalgic yet modern experience. This project combines high-fidelity skeuomorphic details with a clean, minimalist digital interface.
 
-## Features
+## 🎨 Design Choices
 
-- Wall-calendar inspired layout with hero section and month anchor.
-- Interactive month navigation (previous/next).
-- Day range selection with clear visual states:
-  - start day
-  - end day
-  - days in-between
-- Integrated notes section:
-  - notes per selected day
-  - saved in `localStorage`
-  - delete single-day note
-- Fully responsive:
-  - desktop: side-by-side calendar and notes
-  - mobile: stacked, touch-friendly layout
+The project was built with a strong focus on visual excellence and user experience:
 
-## Tech Stack
+- **Minimalist Aesthetic**: A crisp white layout that allows the content and imagery to breathe, utilizing a sleek dark mode compatible color scheme.
+- **Dynamic Themes**: Each month features a unique, curated HSL color palette that updates the primary accents throughout the UI (dates, hover states, and headers).
+- **Narrative Hero Section**: A high-impact mountain climber visual serves as a motivational centerpiece, using SVG masking for a premium, non-rectangular appearance.
+- **Skeuomorphic Elements**: 
+  - **Spiral Binding**: Realistic 3D-effect spirals and a central hanger that mimic a physical wall calendar.
+  - **Lined Paper Notes**: A digital notepad with a repeating linear gradient background to simulate real notebook paper.
+- **Interactive States**: Smooth transitions, hover effects, and a custom date range selector with clear start/end visual markers.
 
-- React (JSX)
-- Tailwind CSS (via `@tailwindcss/vite`)
-- Vite
+## 🛠 Tech Stack
 
-## Run Locally
+- **React**: For a component-based, modular architecture.
+- **Vite**: For lightning-fast development and optimized production builds.
+- **Tailwind CSS**: For flexible, responsive styling without boilerplate.
+- **Lucide React**: For consistent, high-quality iconography.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd wall-calendar
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+To start the development server:
 
 ```bash
-npm install
 npm run dev
 ```
 
-Open the local URL shown in terminal (usually `http://localhost:5173`).
-
-## Build
-
-```bash
-npm run build
-```
-
-## Notes on Design Choices
-
-- Calendar grid uses a full 6-week (42-cell) matrix for consistent alignment.
-- Monday is used as the first day of week to match common wall-calendar layouts.
-- Range selection behavior:
-  - first click sets start
-  - second click sets end
-  - third click starts a new selection
+The application will be available at `http://localhost:5173`.

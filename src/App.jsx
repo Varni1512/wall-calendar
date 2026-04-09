@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const monthThemes = [
-  "#1E88E5", // Jan - Blue 
-  "#E53935", // Feb - Red
-  "#43A047", // Mar - Green
-  "#FDD835", // Apr - Yellow
-  "#8E24AA", // May - Purple
-  "#00ACC1", // Jun - Cyan
-  "#FFB300", // Jul - Amber
-  "#F4511E", // Aug - Deep Orange
-  "#3949AB", // Sep - Indigo
-  "#D81B60", // Oct - Pink
-  "#6D4C41", // Nov - Brown
-  "#546E7A"  // Dec - Blue Grey
+  "#1E88E5",
+  "#E53935",
+  "#43A047",
+  "#FDD835",
+  "#8E24AA",
+  "#00ACC1",
+  "#FFB300",
+  "#F4511E",
+  "#3949AB",
+  "#D81B60",
+  "#6D4C41",
+  "#546E7A"
 ];
 
 const InteractiveCalendar = () => {
@@ -105,7 +105,7 @@ const InteractiveCalendar = () => {
 
       <div className="relative bg-white w-full max-w-4xl rounded-xl shadow-2xl overflow-visible">
 
-        {/* Top Spirals */}
+
         <div className="absolute -top-6 left-0 w-full flex justify-evenly px-6 z-30 pointer-events-none">
           {Array.from({ length: 42 }).map((_, i) => {
             if (i >= 19 && i <= 22) return <div key={i} className="w-3" />;
@@ -121,7 +121,7 @@ const InteractiveCalendar = () => {
           })}
         </div>
 
-        {/* Central Hanger */}
+
         <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 pointer-events-none drop-shadow-lg">
           <svg width="100" height="50" viewBox="0 0 100 50">
             <path d="M 0 42 C 25 42, 35 42, 40 25 C 43 12, 47 12, 50 25 C 55 42, 65 42, 100 42" stroke="#222" strokeWidth="4" fill="none" strokeLinecap="round" />
@@ -129,20 +129,20 @@ const InteractiveCalendar = () => {
           </svg>
         </div>
 
-        {/* Hero Section */}
+
         <div className="relative h-[400px] md:h-[600px] w-full bg-white overflow-hidden rounded-t-xl">
 
-          {/* WRAPPER (ab top pe stick hoga) */}
+
           <div className="absolute top-0 left-0 w-full h-[400px] md:h-[600px]">
 
-            {/* IMAGE */}
+
             <img
               src="https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
               alt="Mountain Climber"
               className="absolute inset-0 w-full h-full object-cover object-center z-0"
             />
 
-            {/* SVG */}
+
             <svg
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
@@ -169,14 +169,14 @@ const InteractiveCalendar = () => {
                 d="M 58,90 
                 L 101,40 
                 L 105,80
-                L 82,100        /* 👈 corner ke paas thoda upar */
+                L 82,100
                 Q 80,100 50,98 
                 L 53,94 Z"
                 fill={themeColor}
               />
             </svg>
 
-            {/* TEXT */}
+
             <div className="absolute bottom-[10%] right-[6%] md:right-[6%] z-20 flex flex-col items-end text-white text-right">
               <div className="flex items-center gap-2 mb-0.5">
                 <button onClick={() => handleMonthChange(-1)} className="text-white">
@@ -200,7 +200,7 @@ const InteractiveCalendar = () => {
           </div>
         </div>
 
-        {/* Bottom Calendar Area */}
+
         <div className="flex flex-col md:flex-row w-full bg-white p-6 md:p-10 gap-8 md:gap-16 rounded-b-xl relative z-20 -mt-1">
           <div className="w-full md:w-[35%] flex flex-col pt-2">
             <h3 className="text-sm font-bold text-gray-800 mb-4 tracking-wide uppercase">Notes</h3>

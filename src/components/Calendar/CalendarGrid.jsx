@@ -12,7 +12,7 @@ const CalendarGrid = ({
 }) => {
   return (
     <div className="w-full md:w-[65%]">
-      {/* Day Labels */}
+
       <div className="grid grid-cols-7 gap-1 mb-4 text-center">
         {daysOfWeek.map((day, idx) => (
           <div
@@ -28,7 +28,7 @@ const CalendarGrid = ({
         ))}
       </div>
 
-      {/* Days Grid */}
+
       <div className="grid grid-cols-7 gap-y-4 gap-x-1 text-center relative z-10">
         {calendarDays.map((dayObj, idx) => {
           const isSelected = isDateSelected(dayObj.date);
